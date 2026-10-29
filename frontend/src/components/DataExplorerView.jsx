@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Calendar, Info } from 'lucide-react';
+import { Download, Calendar } from 'lucide-react';
 import {
   ResponsiveContainer,
   ComposedChart,
@@ -95,13 +95,6 @@ export default function DataExplorerView({ plantId }) {
           </label>
         }
       />
-
-      <div className="flex items-start gap-2 rounded-xl bg-amber-50 px-4 py-3 text-xs text-amber-900">
-        <Info className="w-4 h-4 shrink-0 mt-0.5" />
-        <p>
-          Actual regional grid demand is not available. Net load is computed as the illustrative demand profile minus solar generation.
-        </p>
-      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
         <MetricCard
